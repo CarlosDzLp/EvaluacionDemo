@@ -1,0 +1,31 @@
+﻿<Properties StartupConfiguration="{1529B3BE-F6CD-4AC5-8977-D174FB6B5398}|Default">
+  <MonoDevelop.Ide.Workbench>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="EvaluacionDemo" expanded="True">
+            <Node name="EvaluacionDemo" expanded="True">
+              <Node name="ViewModels" expanded="True">
+                <Node name="AddUserPopupViewModel.cs" selected="True" />
+              </Node>
+              <Node name="Views" expanded="True">
+                <Node name="PopupPage" expanded="True" />
+              </Node>
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.EvaluacionDemo.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.BC5F197B-9695-4907-9003-162941712943" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/carlosdiaz/Projects/EvaluacionDemo/BussinesLayer/BLLogin.cs" relfile="BussinesLayer/BLLogin.cs" line="21" column="1" />
+      <Breakpoint file="/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/DbContext.cs" relfile="DataAccessLayer/DbContext.cs" line="48" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.EvaluacionDemo.Android PreferredExecutionTarget="Android.6NU7N18403008952" />
+</Properties>

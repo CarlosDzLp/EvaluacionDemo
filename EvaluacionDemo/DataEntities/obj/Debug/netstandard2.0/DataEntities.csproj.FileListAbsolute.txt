@@ -1,0 +1,9 @@
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/bin/Debug/netstandard2.0/DataEntities.deps.json
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/bin/Debug/netstandard2.0/DataEntities.dll
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/bin/Debug/netstandard2.0/DataEntities.pdb
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/obj/Debug/netstandard2.0/DataEntities.csprojAssemblyReference.cache
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/obj/Debug/netstandard2.0/DataEntities.csproj.CoreCompileInputs.cache
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/obj/Debug/netstandard2.0/DataEntities.AssemblyInfoInputs.cache
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/obj/Debug/netstandard2.0/DataEntities.AssemblyInfo.cs
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/obj/Debug/netstandard2.0/DataEntities.dll
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataEntities/obj/Debug/netstandard2.0/DataEntities.pdb

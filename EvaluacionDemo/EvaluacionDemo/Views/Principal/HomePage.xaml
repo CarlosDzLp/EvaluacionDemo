@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="EvaluacionDemo.Views.Principal.HomePage"
+    xmlns:controls="clr-namespace:EvaluacionDemo.Controls;assembly=EvaluacionDemo"
+    BackgroundColor="#EDEDED"
+    Title="Home">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+            Order="Default"
+            Priority="0"
+            Command="{Binding ItemToolBarcommand}"
+            Icon="add"/>
+    </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <controls:CustomListView
+            VerticalOptions="FillAndExpand"
+            HorizontalOptions="FillAndExpand"
+            HasUnevenRows="true"
+            SeparatorVisibility="None"
+            ItemSelectedCommand="{Binding SelectedCommand}"
+            ItemsSource="{Binding ListUser}">
+            <controls:CustomListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout
+                            BackgroundColor="White"
+                            Margin="10,5"
+                            Padding="10">
+                            <Grid
+                                BackgroundColor="White"
+                                Margin="10">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="*"/>
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto"/>
+                                    <RowDefinition Height="Auto"/>
+                                </Grid.RowDefinitions>
+                                <StackLayout
+                                    Grid.Column="0"
+                                    Grid.Row="0"
+                                    Orientation="Vertical">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Correo: "/>
+                                    <Label
+                                        Text="{Binding Email}"/>
+                                </StackLayout>
+                                <StackLayout
+                                    Grid.Column="1"
+                                    Grid.Row="0"
+                                    Orientation="Vertical">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Usuario: "/>
+                                    <Label
+                                        Text="{Binding User}"/>
+                                </StackLayout>
+                                <StackLayout
+                                    Grid.Column="0"
+                                    Grid.Row="1"
+                                    Orientation="Vertical">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Status: "/>
+                                    <Label
+                                        Text="{Binding Status}"/>
+                                </StackLayout>
+                                <StackLayout
+                                    Grid.Column="1"
+                                    Grid.Row="1"
+                                    Orientation="Vertical">
+                                    <Label
+                                        FontAttributes="Bold"
+                                        Text="Sexo: "/>
+                                    <Label
+                                        Text="{Binding Sex}"/>
+                                </StackLayout>
+                            </Grid>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </controls:CustomListView.ItemTemplate>
+        </controls:CustomListView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="EvaluacionDemo.Views.Session.LoginPage"
+    xmlns:controls="clr-namespace:EvaluacionDemo.Controls;assembly=EvaluacionDemo"
+    xmlns:behaviors="clr-namespace:EvaluacionDemo.Behaviors;assembly=EvaluacionDemo"
+    BackgroundColor="White"
+    Title="Iniciar Sesion">
+    <ContentPage.Content>
+        <ScrollView
+            VerticalScrollBarVisibility="Never">
+            <StackLayout
+                Margin="30,10"
+                Spacing="15"
+                VerticalOptions="Center">
+                <controls:BorderEntry
+                    Icon="user"
+                    BorderColor="#1976D2"
+                    BorderWidth="4"
+                    CornerRadius="8"
+                    IsCurvedCornersEnabled="true"
+                    Text="{Binding User}"
+                    TextColor="Black"
+                    Placeholder="Usuario"
+                    PlaceholderColor="Gray"
+                    Keyboard="Email">
+                    <controls:BorderEntry.Behaviors>
+                         <behaviors:ValidateLength/>  
+                    </controls:BorderEntry.Behaviors>
+                </controls:BorderEntry>
+                <controls:BorderEntry
+                    Icon="password"
+                    BorderColor="#1976D2"
+                    BorderWidth="4"
+                    CornerRadius="8"
+                    IsCurvedCornersEnabled="true"
+                    Text="{Binding Password}"
+                    TextColor="Black"
+                    Placeholder="Contraseña"
+                    PlaceholderColor="Gray"
+                    IsPassword="true"
+                    Keyboard="Text">
+                    <controls:BorderEntry.Behaviors>
+                         <behaviors:ValidatePassword/>  
+                    </controls:BorderEntry.Behaviors>
+                </controls:BorderEntry>
+                <Button
+                    BackgroundColor="White"
+                    Text="Iniciar Sesion"
+                    TextColor="#1976D2"
+                    Command="{Binding LogInCommand}"
+                    CornerRadius="0"
+                    BorderColor="#1976D2"
+                    BorderWidth="3"/>
+                <StackLayout
+                    Padding="10,5"
+                    VerticalOptions="Center"
+                    HorizontalOptions="Center">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer
+                            Command="{Binding TapRegisterCommand}"
+                            NumberOfTapsRequired="1" />
+                    </StackLayout.GestureRecognizers>
+                    <Label
+                        FontSize="Large"
+                        Text="Registrate!!"
+                        TextColor="#1976D2"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        VerticalTextAlignment="Center"
+                        HorizontalTextAlignment="Center"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="EvaluacionDemo.Views.Session.RegisterPage"
+    xmlns:behaviors="clr-namespace:EvaluacionDemo.Behaviors;assembly=EvaluacionDemo"
+    xmlns:controls="clr-namespace:EvaluacionDemo.Controls;assembly=EvaluacionDemo"
+    BackgroundColor="White"
+    Title="Registrase">
+    <ContentPage.Content>
+        <ScrollView
+            VerticalScrollBarVisibility="Never">
+            <StackLayout
+                Margin="30,10"
+                Spacing="15"
+                VerticalOptions="Center">
+                <controls:BorderEntry
+                    Icon="email"
+                    BorderColor="#1976D2"
+                    BorderWidth="4"
+                    CornerRadius="8"
+                    IsCurvedCornersEnabled="true"
+                    Text="{Binding Email}"
+                    TextColor="Black"
+                    Placeholder="Correo"
+                    PlaceholderColor="Gray"
+                    Keyboard="Email">
+                    <controls:BorderEntry.Behaviors>
+                         <behaviors:ValidateEmail/>  
+                    </controls:BorderEntry.Behaviors>
+                </controls:BorderEntry>
+                <controls:BorderEntry
+                    Icon="user"
+                    BorderColor="#1976D2"
+                    BorderWidth="4"
+                    CornerRadius="8"
+                    IsCurvedCornersEnabled="true"
+                    Text="{Binding User}"
+                    TextColor="Black"
+                    Placeholder="Usuario"
+                    PlaceholderColor="Gray"
+                    Keyboard="Text">
+                    <controls:BorderEntry.Behaviors>
+                         <behaviors:ValidateLength/>  
+                    </controls:BorderEntry.Behaviors>
+                </controls:BorderEntry>
+                <controls:BorderEntry
+                    x:Name="txtPassword"
+                    Icon="password"
+                    BorderColor="#1976D2"
+                    BorderWidth="4"
+                    CornerRadius="8"
+                    IsCurvedCornersEnabled="true"
+                    Text="{Binding Password}"
+                    TextColor="Black"
+                    Placeholder="Contraseña"
+                    PlaceholderColor="Gray"
+                    IsPassword="true"
+                    Keyboard="Text">
+                    <controls:BorderEntry.Behaviors>
+                        <behaviors:ValidatePassword/> 
+                        <behaviors:CompareTextsValidatorBehavior
+                            BindingContext="{x:Reference txtConfirmaPassword}" Text="{Binding Text}" Ent="{x:Reference txtConfirmaPassword}"/>  
+                    </controls:BorderEntry.Behaviors>
+                </controls:BorderEntry>
+                <controls:BorderEntry
+                    x:Name="txtConfirmaPassword"
+                    Icon="password"
+                    BorderColor="#1976D2"
+                    BorderWidth="4"
+                    CornerRadius="8"
+                    IsCurvedCornersEnabled="true"
+                    Text="{Binding ConfirmPassword}"
+                    TextColor="Black"
+                    Placeholder="Confirmar Contraseña"
+                    PlaceholderColor="Gray"
+                    IsPassword="true"
+                    Keyboard="Text">
+                    <controls:BorderEntry.Behaviors>
+                        <behaviors:ValidatePassword/> 
+                        <behaviors:CompareTextsValidatorBehavior 
+                            BindingContext="{x:Reference txtPassword}" Text="{Binding Text}"/>  
+                    </controls:BorderEntry.Behaviors>
+                </controls:BorderEntry>                   
+                <controls:PickerImage
+                    Image="arrow"
+                    Title="Seleccione sexo"
+                    TextColor="Black"
+                    TitleColor="Gray"
+                    SelectedItem="{Binding SelectedPicker}">
+                    <controls:PickerImage.Items>
+                        <x:String>Masculino</x:String>
+                        <x:String>Femenino</x:String>               
+                    </controls:PickerImage.Items>
+                </controls:PickerImage>
+                <Button
+                    BackgroundColor="White"
+                    Text="Registrarse"
+                    TextColor="#1976D2"
+                    Command="{Binding RegisterCommand}"
+                    CornerRadius="0"
+                    BorderColor="#1976D2"
+                    BorderWidth="3"/>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

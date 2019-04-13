@@ -1,0 +1,13 @@
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/bin/Debug/netstandard2.0/DataAccessLayer.deps.json
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/bin/Debug/netstandard2.0/DataAccessLayer.dll
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/bin/Debug/netstandard2.0/DataAccessLayer.pdb
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/bin/Debug/netstandard2.0/DataEntities.dll
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/bin/Debug/netstandard2.0/DataEntities.pdb
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.csprojAssemblyReference.cache
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.csproj.CoreCompileInputs.cache
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.AssemblyInfoInputs.cache
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.AssemblyInfo.cs
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.csproj.CopyComplete
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.dll
+/Users/carlosdiaz/Projects/EvaluacionDemo/DataAccessLayer/obj/Debug/netstandard2.0/DataAccessLayer.pdb
